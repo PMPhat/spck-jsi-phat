@@ -151,7 +151,7 @@ export const loadFormLogin = () => {
       alert("Dang nhap thanh cong");
       localStorage.setItem("name", email);
       loadCarousel();
-      // getApi("Paris");
+      getApi("Paris");
       checkAccount();
     } else {
       alert("Dang nhap that bai" + isSuccess.info);
@@ -165,7 +165,7 @@ export const loadFormLogin = () => {
       alert("Dang ki thanh cong");
       localStorage.setItem("name", email);
       loadCarousel();
-      // getApi("Paris");
+      getApi("Paris");
       checkAccount();
     } else {
       alert("Dang ki that bai" + isSuccess.info);

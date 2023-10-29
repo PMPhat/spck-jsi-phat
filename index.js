@@ -147,11 +147,11 @@ export const loadCarousel = () => {
 };
 const logo = document.querySelector(".logo").addEventListener("click", () => {
   loadCarousel();
-  // getApi("Paris");
+  getApi("Paris");
 });
 
 loadCarousel();
-// getApi("Paris");
+getApi("Paris");
 
 checkAccount();
 
@@ -159,5 +159,5 @@ const btnClickSearch = document.querySelector("#btnClickSearch");
 btnClickSearch.addEventListener("click", () => {
   let value = document.querySelector(".btnSearch").value;
   document.querySelector("#content").innerHTML = ``;
-  // getApi(value);
+  getApi(value);
 });
