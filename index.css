@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header {
+  height: 75px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 4px 8px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  z-index: 100;
+}
+.headeLeft {
+  display: flex;
+  align-items: center;
+}
+.headerRight {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.headerRight ul {
+  display: none;
+  background-color: white;
+  list-style: none;
+  position: absolute;
+  width: 150px;
+  right: 0;
+  top: 33px;
+  box-shadow: 4px 8px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  padding-left: 0;
+}
+.headerRight ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+}
+.headerRight ul a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 12px;
+  width: 100%;
+}
+.headerRight ul li:hover {
+  background-color: #cfcece;
+  cursor: pointer;
+}
+.headerRight::after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 140px;
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+.headerRight:hover ul {
+  display: block;
+}
+
+#header img {
+  width: 150px;
+  height: 75px;
+  object-position: 0px 8px;
+}
+#header .header-home {
+  margin-right: 100px;
+  font-size: 24px;
+}
+#header #header-search {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 65px;
+  border: 20px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+#header #header-search input {
+  height: 50px;
+  border-radius: 14px;
+  padding: 0 10px;
+  outline: none;
+  width: 200px;
+  margin-left: 10px;
+}
+#Sign {
+  bottom: -100px;
+  width: 142px;
+  right: 0;
+  font-size: 16px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  background: white;
+  z-index: 10;
+  padding-left: 0;
+}
+
+/* Content */
+#phatCarousel {
+  height: 600px;
+}
+#content {
+  margin-top: 75px;
+}
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-item {
+  width: calc((100% / 4) - 20px);
+  margin: 10px;
+}
+.content-item img {
+  width: 100%;
+  border-radius: 20px;
+  height: 300px;
+  object-fit: cover;
+}
+.content-topInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.content-topInfoName {
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 200px;
+}
+.content-middleInfo {
+  color: grey;
+}
+.content-bottomPrice {
+  text-decoration-line: overline;
+  text-decoration: underline;
+}
+.content-bottom {
+  border-bottom: 10px;
+}
+/* footer */
+.footer {
+  background-color: #ccc;
+}
+.footer-top {
+  display: flex;
+}
+.footer-top .footer-topItems {
+  width: calc(100% / 3);
+}
+.footer-topItems h3 {
+  font-size: 16;
+}
+.footer-topItems ul {
+  list-style: none;
+}
+.footer-topItems li {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.footer-topItems ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  line-height: 30px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid grey;
+}
+.bottom-footerLeft {
+  display: flex;
+}
+.bottom-footerLeft ul {
+  display: flex;
+  list-style: none;
+}
+.bottom-footerLeft ul a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: grey;
+}
+.bottom-footerLeft ul a:hover {
+  color: cyan;
+}
+.bottom-footerRight ul a:hover {
+  text-decoration: underline;
+  color: rgb(12, 172, 60);
+}
+.bottom-footerRight .footerAirBnb {
+  margin-right: 20px;
+}
+.bottom-footerRight ul {
+  display: flex;
+  list-style: none;
+}
+.bottom-footerRight ul a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: grey;
+}
+
+/* login */
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
